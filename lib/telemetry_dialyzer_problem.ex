@@ -3,16 +3,12 @@ defmodule TelemetryDialyzerProblem do
   Documentation for `TelemetryDialyzerProblem`.
   """
 
-  @doc """
-  Hello world.
+  # def telemetry_problem do
+  #  OpentelemetryTelemetry.start_telemetry_span(__MODULE__, "my_span", %{}, %{})
+  # end
 
-  ## Examples
-
-      iex> TelemetryDialyzerProblem.hello()
-      :world
-
-  """
-  def hello do
-   OpentelemetryTelemetry.start_telemetry_span(:my_tracer, "my_event", %{}, %{})
-  end
+  # def general_problem do
+  #   tracer = OpenTelemetry.get_tracer(__MODULE__)
+  #   :otel_tracer.start_span(tracer, "my_span", %{})
+  # end
 end
